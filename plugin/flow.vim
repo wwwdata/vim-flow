@@ -30,11 +30,6 @@ if !exists("g:flow#timeout")
   let g:flow#timeout = 2
 endif
 
-" Require the flow executable.
-if !executable(g:flow#flowpath)
-  finish
-endif
-
 " flow error format.
 let s:flow_errorformat = '%EFile "%f"\, line %l\, characters %c-%.%#,%Z%m,'
 " flow from editor.
